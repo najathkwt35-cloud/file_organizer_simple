@@ -1,153 +1,159 @@
-# 📁 File Organizer Simple
+# 🗂️ Python File Manager
 
-A lightweight and beginner-friendly Python application that automatically organizes files into categorized folders based on their file extensions. This project helps keep directories clean and demonstrates the use of Python file handling and automation.
+> A simple and powerful Python toolkit for organizing files and detecting duplicate files.
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange)
 
 ---
 
-## 📌 Overview
+## 📖 About
 
-Managing a folder filled with different file types can be time-consuming. **File Organizer Simple** automates this process by scanning a selected directory and moving files into organized folders such as Images, Documents, Videos, Music, Archives, and more.
+**Python File Manager** is a collection of file management utilities built with Python. It helps users organize messy folders, detect duplicate files, and automate common file management tasks.
 
-This project was created as part of my Python learning journey and showcases practical file automation using Python.
+This project was created as part of my learning journey in Python and automation while building practical projects for my GitHub portfolio.
 
 ---
 
 ## ✨ Features
 
-* 📂 Automatically organizes files by extension
-* 🖼️ Separates images, videos, documents, audio, archives, and more
-* ⚡ Fast and easy to use
-* 🐍 Built entirely with Python
-* 💻 Beginner-friendly code structure
-* 🔄 Reusable for any folder
+### 📁 File Organizer
+
+* Organize files by file type
+* Automatically create categorized folders
+* Supports Images, Documents, Videos, Audio, Archives, Code files, and more
+* Clean and simple Python implementation
+
+### 🔍 Duplicate File Finder
+
+* Scan folders for duplicate files
+* Detect duplicates using file hash comparison
+* Display duplicate file paths
+* Helps free up storage space
 
 ---
 
-## 📁 Supported Categories
+## 📂 Supported Categories
 
-| Category     | Examples                        |
-| ------------ | ------------------------------- |
-| 🖼️ Images   | jpg, jpeg, png, gif, bmp, webp  |
-| 📄 Documents | pdf, docx, doc, txt, pptx, xlsx |
-| 🎥 Videos    | mp4, mkv, avi, mov              |
-| 🎵 Audio     | mp3, wav, flac                  |
-| 🗜️ Archives | zip, rar, 7z                    |
-| 💻 Code      | py, html, css, js, java         |
-| 📦 Others    | Unknown file types              |
+| Category     | Extensions                     |
+| ------------ | ------------------------------ |
+| 🖼️ Images   | jpg, jpeg, png, gif, webp, bmp |
+| 📄 Documents | pdf, docx, txt, pptx, xlsx     |
+| 🎥 Videos    | mp4, mkv, avi, mov             |
+| 🎵 Audio     | mp3, wav, flac                 |
+| 📦 Archives  | zip, rar, 7z                   |
+| 💻 Code      | py, html, css, js, java        |
+| 📁 Others    | Any unsupported file type      |
 
 ---
 
-## 📷 Example
-
-### Before
+## 📸 Project Preview
 
 ```text
-Downloads/
-├── photo.jpg
-├── report.pdf
-├── music.mp3
-├── video.mp4
-├── project.py
-└── archive.zip
-```
-
-### After
-
-```text
-Downloads/
-├── Images/
-│   └── photo.jpg
-├── Documents/
-│   └── report.pdf
-├── Audio/
-│   └── music.mp3
-├── Videos/
-│   └── video.mp4
-├── Code/
-│   └── project.py
-└── Archives/
-    └── archive.zip
+Python File Manager
+│
+├── 📁 File Organizer
+│     ├── Images
+│     ├── Documents
+│     ├── Videos
+│     └── Others
+│
+└── 🔍 Duplicate File Finder
+      ├── Scan Folder
+      ├── Compare Hashes
+      └── Display Duplicate Files
 ```
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Technologies Used
 
 * Python 3
 * os
 * shutil
-* pathlib (optional)
+* hashlib
+* pathlib
 
 ---
 
-## 🚀 Installation
+## 🚀 Getting Started
 
 Clone the repository
 
 ```bash
-git clone https://github.com/najathkwt35-cloud/file_organizer_simple.git
+git clone https://github.com/najathkwt35-cloud/python-file-manager.git
 ```
 
-Move into the project folder
+Go to the project folder
 
 ```bash
-cd file_organizer_simple
+cd python-file-manager
 ```
 
-Run the application
+Run the File Organizer
 
 ```bash
 python organizer.py
 ```
 
-> Replace `organizer.py` with your actual Python filename if it is different.
+Run the Duplicate Finder
+
+```bash
+python duplicate_finder.py
+```
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
-file_organizer_simple/
+python-file-manager/
 │
 ├── organizer.py
+├── duplicate_finder.py
 ├── README.md
-└── assets/
+├── LICENSE
+├── requirements.txt
+├── assets/
+└── screenshots/
 ```
 
 ---
 
 ## 🎯 Learning Objectives
 
-This project helped me learn:
+This project helped me practice:
 
-* Python programming
-* File handling
-* Directory management
-* Loops and conditions
-* Functions
-* Error handling
-* Automation basics
-
----
-
-## 🔮 Future Improvements
-
-* GUI version using CustomTkinter
-* Drag & Drop folder selection
-* Progress bar
-* Undo last operation
-* Duplicate file detection
-* Empty folder cleanup
-* Log file generation
-* Dark mode interface
-* File statistics dashboard
-* AI-based image sorting
+* Python Programming
+* File Handling
+* Directory Management
+* Hash Algorithms
+* Automation
+* Error Handling
+* Functions & Modules
 
 ---
 
-## 🤝 Contributions
+## 🗺️ Future Improvements
 
-Contributions, suggestions, and feature requests are welcome.
+* ✅ Graphical User Interface (CustomTkinter)
+* ✅ Drag & Drop Folder Selection
+* ✅ Progress Bar
+* ✅ Undo Operations
+* ✅ Empty Folder Cleaner
+* ✅ Batch File Renamer
+* ✅ File Statistics Dashboard
+* ✅ Log File Generation
+* ✅ Dark Mode
+* ✅ AI-based File Categorization
+
+---
+
+## 🤝 Contributing
+
+Contributions, ideas, and suggestions are welcome.
 
 Feel free to fork this repository and submit a pull request.
 
@@ -155,7 +161,7 @@ Feel free to fork this repository and submit a pull request.
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -167,9 +173,17 @@ This project is licensed under the MIT License.
 
 ☁️ Aspiring Cloud Engineer
 
-* GitHub: https://github.com/najathkwt35-cloud
-* LinkedIn: https://www.linkedin.com/in/rinas-al-b94b793b4/
+* **GitHub:** https://github.com/najathkwt35-cloud
+* **LinkedIn:** https://www.linkedin.com/in/rinas-al-b94b793b4/
 
 ---
 
-⭐ If you found this project useful, consider giving it a **Star** on GitHub!
+## ⭐ Support
+
+If you found this project useful, please consider giving it a **⭐ Star** on GitHub.
+
+It motivates me to continue building and sharing more open-source projects.
+
+---
+
+> **"Code. Learn. Build. Share. Repeat." 🚀**
